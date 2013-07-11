@@ -9,7 +9,7 @@
 /**
  * A UUID-4 generator.
  */
-angular.module('uuid').service('uuid4', function() {
+angular.module('uuid', []).service('uuid4', function() {
   /**! http://stackoverflow.com/a/2117523/377392 */
   var fmt = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx';
   this.generate = function() {
